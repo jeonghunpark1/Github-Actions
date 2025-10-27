@@ -20,6 +20,11 @@ jobs:
           echo "Everybody"
 
       - name: Github Actions 자체 저장된 변수 사용해보기
-        run : |
+        run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+
+      - name: 비밀값
+        run: |
+          echo ${{ secrets.MY_PASSWORD }}
+          echo ${{ secrets.MY_KEY }}

@@ -10,5 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hello World WLRRL
+      - name: Hello World 찍기
         run: echo "Hellow World"
+
+      - name: 여러 명령어 문장 작성하기
+        run: |
+          echo "Good"
+          echo "Day"
+          echo "Everybody"
